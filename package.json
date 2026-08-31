@@ -1,0 +1,37 @@
+{
+  "name": "pioneer-music-organizer",
+  "version": "1.0.0",
+  "description": "Descargador de música de SoundCloud y YouTube con organización por BPM y artista para Rekordbox Pioneer FLX",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "download": "node src/downloader.js",
+    "organize": "node src/organizer.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "musik",
+    "downloader",
+    "soundcloud",
+    "youtube",
+    "rekordbox",
+    "pioneer"
+  ],
+  "author": "Anahiwendy88",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^11.1.1",
+    "jsmediatags": "^3.9.5",
+    "node-id3": "^0.2.3",
+    "yt-dlp-exec": "^0.1.1",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
